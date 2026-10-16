@@ -4,6 +4,7 @@ import './css/app.css';
 import Image from './images/img.png';
 
 import Student from './elements/Student/Index';
+import List from './elements/List/index';
 
 import CustomName from './elements/Car';
 import { Product } from './elements/Car';
@@ -148,9 +149,19 @@ const jsonObj = {
 const TeacherJsx = <Teacher data={jsonObj} degress={["Master", "Phd"]} />
 
 
+const list1 = <List data={["html", "css", "js"]} />;
+const list2 = <List data2={[["HTML", "Pro"], ["css", "Pro"], ["js", "Beginner"]]} />
 
 
+const countries = [
+  { country: "Lebanon", city: "Beirut" },
+  { country: "France", city: "Paris" },
+  { country: "UK", city: "London" },
 
-createRoot(document.getElementById('root')).render(<Students />);
+]
+
+const list3 = <List data3={countries} />
+
+createRoot(document.getElementById('root')).render(list3);
 
 
