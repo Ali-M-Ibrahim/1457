@@ -3,3 +3,14 @@
     background-color: aqua;
     color: white
 }
+
+.students {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    /* Soft grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 15px;
+}

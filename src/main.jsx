@@ -3,6 +3,7 @@ import './css/app.css';
 
 import Image from './images/img.png';
 
+import Student from './elements/Student/Index';
 
 import CustomName from './elements/Car';
 import { Product } from './elements/Car';
@@ -112,8 +113,44 @@ const data = (
   </div>
 )
 
+function sayHello() {
+  alert("Hello class");
+}
+
+const Students = () => {
+  return (
+    <div className='students'>
+      <Student action={sayHello} canEnroll={true} birthYear="2000" currentYear="2026" img="https://ua.edu.lb/images/UA-SubpageBanner.jpg?w=1920&h=816" year="Second Year" name="Ali Ibrahim" description="bla bla vla" />
+      <Student action={sayHello} canEnroll={false} birthYear="2000" currentYear="2026" img="https://ua.edu.lb/images/UA-SubpageBanner.jpg?w=1920&h=816" year="First Year" name="Ahmad Sheikh" description="bla bla vla 2" />
+      <Student action={sayHello} canEnroll={true} birthYear="2000" currentYear="2026" img="https://ua.edu.lb/images/UA-SubpageBanner.jpg?w=1920&h=816" year="Third Year" name="Joe Doe" description="bla bla vla 3" />
+    </div>)
+}
 
 
-createRoot(document.getElementById('root')).render(data);
+const Teacher = (props) => {
+  const newelemtns = props.degress.map((n) => <li key={n}>{n}</li>)
+  return (
+    <div>
+      <h1>First Name: {props.data.fname}  | Last Name: {props.data.lname}   </h1>
+      <h1>Degrees:</h1>
+      <ul>
+        {newelemtns}
+      </ul>
+    </div>
+  )
+}
+
+const jsonObj = {
+  fname: "Ali",
+  lname: "Ibrahim"
+}
+
+const TeacherJsx = <Teacher data={jsonObj} degress={["Master", "Phd"]} />
+
+
+
+
+
+createRoot(document.getElementById('root')).render(<Students />);
 
 

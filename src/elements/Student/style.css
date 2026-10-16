@@ -1,0 +1,74 @@
+/* Card Container */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 320px;
+    overflow: hidden;
+    /* Keeps image corners rounded */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content Wrapper */
+.card-content {
+    padding: 20px;
+}
+
+/* Tag/Badge */
+.card-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3b82f6;
+    background-color: #eff6ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+/* Typography */
+.card-title {
+    font-size: 20px;
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.card-btn {
+    width: 100%;
+    background-color: #1f2937;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #374151;
+}
