@@ -1,0 +1,84 @@
+/* Universal reset and centering */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card Container */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 340px;
+    padding: 30px 24px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Animation */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Image */
+.card-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 3px solid #0070f3;
+}
+
+/* Typography */
+.card-name {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    color: #0070f3;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.card-bio {
+    font-size: 0.9rem;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* Button with transition */
+.card-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0070f3;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #0051b3;
+}
